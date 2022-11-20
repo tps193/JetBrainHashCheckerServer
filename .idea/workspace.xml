@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd6241d7-dcd7-4384-8149-3a30156b2d7e" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/dao/DataBaseSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/db/Checksums.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/db/DatabaseFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/model/ChecksumResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/model/ChecksumResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/plugins/Serialization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/plugins/Serialization.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/plugins/UrlTemplates.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/plugins/UrlTemplates.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/routing/ChecksumRouting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/routing/ChecksumRouting.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/service/ChecksumService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/service/ChecksumService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/service/ChecksumServiceImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/service/DataBaseSource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/service/DataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/dao/DataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/shadrin/hashchecker/service/MavenRepoSource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
+    <list default="true" id="fd6241d7-dcd7-4384-8149-3a30156b2d7e" name="Changes" comment="Add server logic">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668720439442</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add server logic">
+      <created>1668987149628</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668987149628</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,7 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Add server logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add server logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
