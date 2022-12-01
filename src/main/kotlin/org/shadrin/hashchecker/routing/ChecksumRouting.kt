@@ -5,9 +5,8 @@ import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import org.shadrin.hashchecker.model.ArtifactChecksum
 import org.shadrin.hashchecker.model.ArtifactIdList
-import org.shadrin.hashchecker.model.ChecksumResult
+import org.shadrin.hashchecker.model.ChecksumList
 import org.shadrin.hashchecker.plugins.UrlTemplates
 import org.shadrin.hashchecker.service.ChecksumService
 
@@ -16,13 +15,13 @@ fun Route.checksumRouting() {
         post {
             val artifacts = call.receive<ArtifactIdList>()
             val checksums = ChecksumService.getChecksums(artifacts)
-            call.respond(ChecksumResult(checksums))
+            call.respond(ChecksumList(checksums))
         }
     }
     route(UrlTemplates.ADD_CHECKSUM) {
         post {
-            val artifactChecksum = call.receive<ArtifactChecksum>()
-            ChecksumService.addChecksum(artifactChecksum)
+            val checksumList = call.receive<ChecksumList>()
+            ChecksumService.addChecksum(checksumList)
             call.respond(status = HttpStatusCode.OK, "Added")
         }
     }

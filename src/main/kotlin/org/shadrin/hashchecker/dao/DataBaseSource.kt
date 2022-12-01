@@ -6,6 +6,7 @@ import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransacti
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.shadrin.hashchecker.db.Checksums
 import org.shadrin.hashchecker.model.ArtifactChecksum
+import org.shadrin.hashchecker.model.ChecksumList
 
 object DataBaseSource : DataSource {
     override suspend fun getChecksums(artifactIds: List<String>): List<ArtifactChecksum> = newSuspendedTransaction {
@@ -15,11 +16,13 @@ object DataBaseSource : DataSource {
         ) }
     }
 
-    fun addChecksum(artifactChecksum: ArtifactChecksum) {
+    fun addChecksum(checksumList: ChecksumList) {
         transaction {
-            Checksums.insert {
-                it[artifactId] = artifactChecksum.identifier
-                it[checksum] = artifactChecksum.checksum
+            checksumList.result.forEach { artifactChecksum ->
+                Checksums.insert {
+                    it[artifactId] = artifactChecksum.identifier
+                    it[checksum] = artifactChecksum.checksum
+                }
             }
         }
     }

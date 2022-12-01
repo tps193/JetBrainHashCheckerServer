@@ -3,6 +3,7 @@ package org.shadrin.hashchecker.service
 import org.shadrin.hashchecker.dao.DataBaseSource
 import org.shadrin.hashchecker.model.ArtifactChecksum
 import org.shadrin.hashchecker.model.ArtifactIdList
+import org.shadrin.hashchecker.model.ChecksumList
 
 object ChecksumService {
 
@@ -21,7 +22,7 @@ object ChecksumService {
     /*
     No such actual API should be available. It is implemented for test purposes
      */
-    fun addChecksum(artifactChecksum: ArtifactChecksum) {
-        DataBaseSource.addChecksum(artifactChecksum)
+    fun addChecksum(checksumList: ChecksumList) {
+        DataBaseSource.addChecksum(checksumList)
     }
 }
